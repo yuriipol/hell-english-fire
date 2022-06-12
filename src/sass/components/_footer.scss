@@ -1,0 +1,31 @@
+.footer {
+  display: block;
+}
+
+.footer__logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.08em;
+  color: var(--primary-color);
+}
+
+.footer__right {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: var(--primary-color);
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 2;
+}
