@@ -1,0 +1,43 @@
+.registration {
+  padding: 55px 20px;
+  background-color: var(--primary-color);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: auto;
+}
+
+.registration__note1 {
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-light);
+  margin-bottom: 25px;
+}
+
+.registration__note2 {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 0.08em;
+  color: var(--primary-light);
+}
+.registration__note3 {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 0.08em;
+  color: var(--primary-light);
+  margin-bottom: 43px;
+}
+.registration-form {
+  padding-top: 15px;
+  padding-bottom: 16px;
+  padding-left: 28px;
+  background: var(--dark-background);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
