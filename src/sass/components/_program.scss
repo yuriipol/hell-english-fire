@@ -1,0 +1,108 @@
+.program {
+  min-width: 320px;
+  display: block;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 50px;
+  background-color: var(--primary-color);
+
+  @media screen and (min-width: 768px) {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 60px;
+
+    @media screen and (min-width: 1440px) {
+      padding-left: 183px;
+      padding-right: 183px;
+      padding-top: 120px;
+    }
+  }
+}
+
+.program-list,
+.program-semestr__list,
+.program-details__list {
+  list-style-type: none;
+}
+
+.program-list {
+  @media screen and (min-width: 1440px) {
+    display: flex;
+  }
+}
+
+.program__title {
+  margin-bottom: 30px;
+  color: var(--primary-light);
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.3;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    margin-bottom: 52px;
+    text-align: left;
+  }
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    font-size: 46px;
+    margin-bottom: 58px;
+  }
+}
+
+.program-list__title {
+  margin-bottom: 5px;
+  color: var(--primary-light);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 25px;
+    font-size: 30px;
+    line-height: 0.93;
+  }
+}
+.program-list__item {
+  @media screen and (min-width: 1440px) {
+    margin-right: 46px;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.program-semestr__title {
+  margin-bottom: 5px;
+  color: var(--accent-color);
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.65;
+
+  letter-spacing: 0.08em;
+
+  @media screen and (min-width: 1440px) {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+}
+.program-details__list {
+  margin-bottom: 8px;
+}
+.program-details__text {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.67;
+  letter-spacing: 0.08em;
+  opacity: 0.5;
+
+  @media screen and (min-width: 1440px) {
+    font-size: 18px;
+    line-height: 1.56;
+  }
+}
