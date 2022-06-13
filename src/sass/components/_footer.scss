@@ -2,13 +2,14 @@
   display: block;
 }
 .footer__contacts {
+  // position: relative;
   padding-top: 24px;
   padding-bottom: 30px;
 }
 
 .footer__contacts-logo {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   margin-bottom: 22px;
   font-weight: 800;
   font-size: 26px;
@@ -40,9 +41,12 @@
   color: var(--primary-color);
   margin-bottom: 30px;
 }
-
 .footer__contacts-img {
-  margin: auto;
+  display: block;
+  height: 40px;
+  width: 40px;
+  margin: 0 auto;
+  background-image: url(../images/footer/instagram.png);
 }
 
 .footer__right {
