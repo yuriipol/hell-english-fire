@@ -1,10 +1,11 @@
 .registration {
   padding: 55px 20px;
+  height: auto;
   background-color: var(--primary-color);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: auto;
+  background-image: url(../images/registration/registration-bg.png);
 }
 
 .registration__note1 {
@@ -25,6 +26,7 @@
   letter-spacing: 0.08em;
   color: var(--primary-light);
 }
+
 .registration__note3 {
   font-weight: 600;
   font-size: 12px;
@@ -34,10 +36,87 @@
   color: var(--primary-light);
   margin-bottom: 43px;
 }
-.registration-form {
+
+.registration__form-label {
+  display: flex;
+  flex-direction: column-reverse;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.08em;
+}
+
+.registration__form-name {
+  width: 280px;
+  height: 48px;
+  margin-bottom: 20px;
   padding-top: 15px;
   padding-bottom: 16px;
   padding-left: 28px;
-  background: var(--dark-background);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: transparent;
+  border: 1px solid var(--primary-light);
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.08em;
+  color: var(--primary-light);
+}
+
+.registration__form-name::placeholder {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.08em;
+  color: var(--primary-light);
+}
+
+.registration__form-tel {
+  width: 280px;
+  height: 48px;
+  margin-bottom: 50px;
+  padding-top: 15px;
+  padding-bottom: 16px;
+  padding-left: 28px;
+  background-color: transparent;
+  border: 1px solid var(--primary-light);
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.08em;
+  color: var(--primary-light);
+}
+
+.registration__form-tel::placeholder {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.08em;
+  color: var(--primary-light);
+}
+
+.registration__btn {
+  width: 260px;
+  height: 48px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--primary-light);
+  border: none;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.registration__btn:hover,
+.registration__btn:focus {
+  border: 1px solid;
+  border-color: var(--primary-light);
 }
