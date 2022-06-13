@@ -1,3 +1,24 @@
+.section-guarantee{
+  padding-top: 0px;
+
+  // @media screen and (min-width: 1440px) {
+  // padding-top: 129px;
+  // }
+
+}
+
+// .section-conteiner{
+//   @media screen and (min-width: 320px) {
+//     padding: 0 20px;
+//   }
+//   @media screen and (min-width: 768px) {
+//     padding: 0 40px;
+
+//   }
+//   @media screen and (min-width: 1440px) {
+//     padding: 0 183px;
+//   }
+// }
 
 .guaratee__title {
   font-weight: 800;
@@ -46,8 +67,31 @@
     }
 }
 .guarantee__item{
-    display: flex;
+  position: relative;
+    // display: flex;
+    @media screen and (max-width: 767.98px) {
+      padding-left: 35px;
+
+    }
+    @media screen and (min-width: 768px) {
+      padding-left: 39px;
+
+    }
+    @media screen and (min-width: 1440px) {
+      padding-left: 52px;
+    }
 }
+
+
+.guarantee__item:not(:last-child){
+  @media screen and (max-width: 767.98px) {
+      margin-bottom: 25px;
+  }
+  @media screen and (min-width: 768px) {
+      margin-bottom: 20px;
+  }
+}
+
 .guarantee__item::before{
     content: " ";
     background-image: url(/src/images/teacher/svg/campfire.svg);
@@ -56,32 +100,31 @@
     background-size: contain;
     display: block;
     flex-shrink: 0;
-
-    @media screen and (max-width: 767.98px) {
-    margin-right: 20px;
-
-    }
-
-    @media screen and (min-width: 768px) {
-    margin-right: 24px;
-    }
-    
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    left: 0;
 
   @media screen and (min-width: 1440px) {
     width: 22px;
     height: 30px;
-    margin-right: 24px;
+  }
+}
+.guarantee__item:not(:last-child):after{
+  content: " ";
+  position: absolute;
+  border: 1px dashed #B9B9B9;
+  top: 25px;
+  left: 11px;
+  height:100%;
+  display: block;
+
+  @media screen and (max-width: 1439.98px) {
+    left: 7px;
   }
 }
 
-.guarantee__item:not(:last-child){
-    @media screen and (max-width: 767.98px) {
-        margin-bottom: 25px;
-    }
-    @media screen and (min-width: 768px) {
-        margin-bottom: 20px;
-    }
-}
+
 
 .guarantee__txt {
     font-weight: 500;
