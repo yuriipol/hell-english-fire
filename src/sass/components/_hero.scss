@@ -1,6 +1,7 @@
 .flex-hero {
   @media screen and (min-width: $tablet) {
     display: flex;
+    justify-content: center;
   }
 }
 
