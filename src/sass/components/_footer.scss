@@ -2,9 +2,16 @@
   display: block;
 }
 .footer__contacts {
-  // position: relative;
   padding-top: 24px;
   padding-bottom: 30px;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    padding-top: 50px;
+    padding-right: 40px;
+    padding-bottom: 0px;
+    padding-left: 40px;
+  }
 }
 
 .footer__contacts-logo {
@@ -29,6 +36,12 @@
 .text--accent {
   color: var(--accent-color);
 }
+.footer__contacts-tablet {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: baseline;
+  }
+}
 
 .footer__contacts-phone {
   display: flex;
@@ -40,13 +53,33 @@
   letter-spacing: 0.08em;
   color: var(--primary-color);
   margin-bottom: 30px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 50px;
+    padding-right: 20px;
+    border-right: 1px solid var(--primary-text-color);
+  }
 }
+.footer__contacts-phone-svg {
+  margin-right: 10px;
+
+  @media screen and (min-width: $tablet) {
+    margin-right: 20px;
+  }
+}
+
 .footer__contacts-img {
   display: block;
   height: 40px;
   width: 40px;
   margin: 0 auto;
   background-image: url(../images/footer/instagram.png);
+
+  @media screen and (min-width: $tablet) {
+    display: inline-flex;
+    justify-content: left;
+    margin-left: 20px;
+  }
 }
 
 .footer__right {
@@ -59,4 +92,9 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 2;
+
+  @media screen and (min-width: $tablet) {
+    justify-content: start;
+    padding-left: 20px;
+  }
 }
