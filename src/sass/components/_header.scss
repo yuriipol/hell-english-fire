@@ -4,11 +4,12 @@
 }
 .flex {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 .logo {
   display: flex;
   flex-direction: column;
+
   // position: relative;
   // z-index: 120;
   font-weight: 700;
@@ -20,12 +21,39 @@
   @media screen and (min-width: $tablet) {
     font-size: 8px;
   }
+  @media screen and (min-width: $desktop) {
+    margin-left: 181px;
+  }
+}
+.logo-menu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+
+  // position: relative;
+  // z-index: 120;
+  font-weight: 700;
+  font-size: 5px;
+  line-height: 1.2;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #fff;
+  @media screen and (min-width: $tablet) {
+    margin-top: 41px;
+  }
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
 }
 .heder-logo {
   margin-bottom: 4px;
 
   @media screen and (min-width: $tablet) {
-    width: 120px;
+    width: 128px;
+    height: 45px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 128px;
     height: 45px;
   }
 }
@@ -37,7 +65,20 @@
   margin-bottom: 50px;
   @media screen and (min-width: $desktop) {
     display: flex;
-    // background-color: #fff;
+    margin: 0;
+  }
+  @media screen and (min-width: $tablet) and (max-width: 1439px) {
+    margin-top: 159px;
+    margin-left: 218px;
+    margin-right: 218px;
+  }
+}
+.navigation__item:not(:last-child) {
+  @media screen and (min-width: $desktop) {
+    margin-right: 40px;
+  }
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 28px;
   }
 }
 .navigation__link {
@@ -59,9 +100,15 @@
 
     color: #b9b9b9;
   }
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 1.8px;
+  }
 }
 .consultation {
-  display: block;
+  // display: block;
+  max-width: 320px;
   padding: 14px;
 
   margin-left: auto;
@@ -74,7 +121,7 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--accent-color);
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: $tablet) {
     display: none;
   }
 }
@@ -99,6 +146,9 @@
   @media screen and (min-width: $tablet) {
     font-size: 14px;
     line-height: 1.2;
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 27px 23px;
   }
 }
 .navigation__button-menu {
@@ -140,7 +190,7 @@
   &.is-open {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    // justify-content: space-between;
 
     position: fixed;
     top: 0;
@@ -151,6 +201,8 @@
   @media screen and (min-width: $desktop) {
     display: flex;
     background-color: #fff;
+    padding: 0;
+    margin-left: 144px;
   }
 }
 
