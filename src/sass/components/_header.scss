@@ -21,9 +21,9 @@
   @media screen and (min-width: $tablet) {
     font-size: 8px;
   }
-  @media screen and (min-width: $desktop) {
-    margin-left: 181px;
-  }
+  // @media screen and (min-width: $desktop) {
+  //   margin-left: 181px;
+  // }
 }
 .logo-menu {
   display: flex;
@@ -100,21 +100,22 @@
 
     color: #b9b9b9;
   }
-  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+  @media screen and (min-width: $tablet) and (max-width: 1439px) {
     font-weight: 800;
     font-size: 26px;
     line-height: 1.8px;
   }
 }
 .consultation {
-  // display: block;
+  display: block;
   max-width: 320px;
   padding: 14px;
 
-  margin-left: auto;
+  margin: 0 auto;
 
   border: 2px solid #ff6b09;
 
+  text-align: center;
   font-weight: 700;
   font-size: 12px;
   line-height: 1.2;
