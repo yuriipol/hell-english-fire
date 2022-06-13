@@ -166,11 +166,12 @@
         </ul>
  </li>
 </ul>  
-<picture>
-    <img src="./images/program/program-bg.jpg"
-     alt="students on the lesson"
-      width="120">
-
+<picture> 
+     <source srcset="./images/program/desktop.jpg 1x, ./images/program/desctop@2x.jpg 2x" media="(min-width:1440px)">
+                 <source srcset="./images/program/tablet.jpg 1x, ./images/program/tablet@2x.jpg 2x" media="(min-width:768px)">
+                 <source srcset="./images/program/mobile.jpg 1x, ./images/program/mobile@2x.jpg 2x" media="(max-width:767.98px)">
+                 <img class="program__photo" src="./images/program/mobile.jpg" 
+                  alt="students on the lesson">
 </picture>
   </div>
 
