@@ -1,10 +1,13 @@
-<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
 <defs>
-<symbol id="icon-menu" viewBox="0 0 53 32">
-<path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4.5714" d="M2.286 2.292h48.014M2.286 16.010h48.014M2.286 29.728h48.014"></path>
+<symbol id="icon-close" viewBox="0 0 32 32">
+<path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.7647" d="M1.882 29.168l27.286-27.286"></path>
+<path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.7647" d="M29.169 29.168l-27.286-27.286"></path>
 </symbol>
-<symbol id="icon-close" viewBox="0 0 30 32">
-<path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.5556" d="M1.78 28.896l25.78-25.78M27.56 28.896l-25.78-25.78"></path>
+<symbol id="icon-menu" viewBox="0 0 23 14">
+<path d="M1 1H22" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<path d="M1 7H22" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<path d="M1 13H22" stroke="black" stroke-width="2" stroke-linecap="round"/>
 </symbol>
 </defs>
 </svg>
