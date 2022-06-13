@@ -7,6 +7,8 @@
 }
 .logo {
   display: block;
+  // position: relative;
+  // z-index: 120;
   font-weight: 700;
   font-size: 5px;
   line-height: 1.2;
@@ -53,9 +55,9 @@
   // border: none;
   // background-color: rgb(226, 226, 237);
   // cursor: pointer;
-}
-.icon-cross {
-  fill: #ff6b09;
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
 }
 
 .navigation__button-menu .icon-cross {
