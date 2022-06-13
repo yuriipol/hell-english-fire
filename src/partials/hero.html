@@ -1,31 +1,42 @@
 <section class="hero section">
-  <div class="conteiner">
-    <h1 class="hero__title">Complex preparation for English UPE</h1>
-    <p class="hero-text">
-      <span class="hero-text__mod1">It won’t be easy.</span>
-      But you’re guaranteed to get
-      <span class="hero-text__mod2">+25 points</span>
-    </p>
-    <a href="" class="hero__lesson link">I want a free lesson</a>
-    <ul class="hero-list list">
-      <li class="hero-list__item">
-        <svg class="hero-icon" width="60" height="60">
-          <use href="./images/hero/sprite__hero-icon.svg#icon-Group1"></use>
-        </svg>
-        <p class="hero-list__item-text">Adapted author's UPE program</p>
-      </li>
-      <li class="hero-list__item">
-        <svg class="hero-icon" width="60" height="60">
-          <use href="./images/hero/sprite__hero-icon.svg#icon-Group2"></use>
-        </svg>
-        <p class="hero-list__item-text">Modern teaching methods</p>
-      </li>
-      <li class="hero-list__item">
-        <svg class="hero-icon" width="60" height="60">
-          <use href="./images/hero/sprite__hero-icon.svg#icon-Group3"></use>
-        </svg>
-        <p class="hero-list__item-text">Financial guarantee the result</p>
-      </li>
-    </ul>
+  <div class="conteiner flex-hero">
+    <div class="hero__txt">
+      <h1 class="hero__title">Complex preparation for English UPE</h1>
+      <p class="hero-text">
+        <span class="hero-text__mod1">It won’t be easy.</span>
+        But you’re guaranteed to get
+        <span class="hero-text__mod2">+25 points</span>
+      </p>
+      <a href="" class="hero__lesson link">I want a free lesson</a>
+    </div>
+    <picture>
+      <source
+        srcset="
+          ./images/hero/hero_desktop.png    1x,
+          ./images/hero/hero_desktop@2x.png 2x
+        "
+        media="(min-width: 1440px)"
+      />
+      <source
+        srcset="
+          ./images/hero/hero_tablet.png    1x,
+          ./images/hero/hero_tablet@2x.png 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          ./images/hero/hero_mobile.png    1x,
+          ./images/hero/hero_mobile@2x.png 2x
+        "
+        media="(max-width: 767px)"
+      />
+      <img
+        class="hero__img"
+        src="./images/hero/hero_mobile.png"
+        alt="Игорь Демьяненко"
+        loading="lazy"
+      />
+    </picture>
   </div>
 </section>
