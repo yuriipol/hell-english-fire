@@ -54,6 +54,7 @@
 
 }
 .studies__item{
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
   width: 100%;
   @media screen and (max-width: 767.98px) {
@@ -69,25 +70,23 @@
   }
 }
 
-.studies__item:hover{
+.studies__item:hover,
+.studies__item:focus{
   background-color: var(--accent-color);
-}
-.studies__item:hover .studies__desc{
-  color: var(--primary-light);
-}
-.studies__item:hover .studies__txt{
-  color: var(--primary-light);
-}
-.studies__item:hover .studies__icon{
-  fill: var(--primary-light);
-}
-.studies__item:hover .studies__desc::after{
-  background-color: var(--primary-light);
-}
 
-
-
-
+  & .studies__desc{
+    color: var(--primary-light);
+  }
+  & .studies__txt{
+    color: var(--primary-light);
+  }
+  & .studies__icon{
+    fill: var(--primary-light);
+  }
+  & .studies__desc::after{
+    background-color: var(--primary-light);
+  }
+}
 
 
 .icon{
@@ -101,6 +100,8 @@
 }
 }
 .studies__icon{
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--accent-color);
 }
 
@@ -133,6 +134,9 @@
   line-height: 1.43;
   margin-bottom: 22px;
 
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
   @media screen and (min-width: 1440px) {
     font-size: 20px;
     line-height: 1.4;
@@ -150,6 +154,8 @@
   margin-left: auto;
   margin-right: auto;
 
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   @media screen and (min-width: 1440px) {
     margin-top: 15px;
   }
@@ -164,6 +170,8 @@
 
     font-size: 12px;
     line-height: 1.67;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-width: 1440px) {
     font-size: 18px;
