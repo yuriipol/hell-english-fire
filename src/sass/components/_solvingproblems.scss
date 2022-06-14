@@ -1,15 +1,26 @@
 .solving {
-  display: block;
-  flex-wrap: wrap;
-  position: relative;
+    // padding-top: 100px;
+    // padding-bottom: 430px;
+// display: block;
+// flex-wrap: wrap;
+// position: relative;
 
   background-color: var(--primary-color);
   background-image: linear-gradient(
-    to bottom var(--primary-color) ,
-    var(--primary-light)); 
-    background-position: 78% 22%;
-  background-repeat: no-repeat;
-//   margin-bottom: 130px;
+  to bottom, #111518 78%,#ffffff 78%),
+//   url('../src/images/solvinfproblem/fire.png');
+  
+//   position: absolute;
+//   left: 0.3%;
+//   right: -11.5%;
+//   top: 0.01%;
+//   bottom: -31.55%;
+
+// flex-basis: calc(100% - 149px);
+     
+//    background-position: 78% 22%;
+//    background-repeat none;
+//    margin-bottom: 130px;
 }
 .solving__title {
   display: block;
@@ -42,10 +53,10 @@
   color: var(--primary-color);
   margin-left: 11%;
   margin-right: 11%;
-padding-top: 5%;
-padding-bottom: 5%;
-padding-left: 10%;
-padding-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
   align-items: center;
   background-color: var(--primary-light);
 }
@@ -71,28 +82,21 @@ padding-right: 10%;
   content: '— ' counter(section) '';
   display: flex;
   color: var(--accent-color);
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 164.9%;
-  
 
   align-items: top;
   letter-spacing: 0.08em;
 }
 
+
 .solving-board__item {
     display: inline-block;
-    // width: calc(100% - 306px) / 3;
     padding-top: 2%; 
     padding-bottom: 2%;
      
-    /* TODO: last child padding not*/ 
     text-align: left;
-    // vertical-align: text-top;
-    
+
     margin-left: 40px;
-&:not-last-child {
-    margin-left: 0px;  
+&:not-first-child {
+    margin-left: 0px;    
 }
 }
