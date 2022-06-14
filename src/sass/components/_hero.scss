@@ -65,10 +65,10 @@
   background-color: var(--accent-color);
   color: #ffffff;
 
-  @media screen and (max-width: $tablet) {
-    margin: 0 auto;
-    margin-bottom: 54px;
-  }
+  // @media screen and (max-width: $tablet) {
+  //   margin: 0 auto;
+  //   margin-bottom: 54px;
+  // }
   @media screen and (min-width: $desktop) {
     max-width: 354px;
     font-size: 14px;

@@ -1,3 +1,9 @@
+.benefits {
+  padding-bottom: 70px;
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 130px;
+  }
+}
 .benefits-list {
   padding-left: 52px;
   padding-right: 45px;
