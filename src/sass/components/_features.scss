@@ -1,0 +1,113 @@
+.features {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 0;
+  display: block;
+  margin-top: -480px;
+
+  @media screen and(min-width:768px) {
+    margin-top: -234px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 35px;
+  }
+  @media screen and(min-width:1440px) {
+    margin-top: -195px;
+  }
+}
+
+.features__title {
+  display: block;
+  width: 180px;
+  margin-bottom: 30px;
+  color: var(--primary-light);
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.36;
+  letter-spacing: 0.03em;
+
+  @media screen and(min-width:768px) {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.08em;
+  }
+}
+.features-box {
+  display: block;
+  width: 280px;
+  height: 638px;
+  align-items: center;
+  background-color: var(--primary-light);
+  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+  margin-right: auto;
+  margin-left: auto;
+  padding: 35px 22px;
+
+  @media screen and(min-width:768px) {
+    width: 688px;
+    height: 363px;
+    padding: 40px 98px;
+  }
+  @media screen and(min-width:1440px) {
+    width: 1314px;
+    height: 390px;
+    padding: 67px 113px;
+  }
+}
+
+.features-list {
+  display: block;
+  list-style-type: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+  }
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    margin: -20px;
+  }
+}
+.features-list__item {
+  @media screen and (min-width: 768px) {
+    width: 236px;
+    display: block;
+    margin: 10px;
+
+    @media screen and (min-width: 1440px) {
+      width: 336px;
+      margin: 20px;
+    }
+  }
+}
+
+.features-list__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+//.features-list__item::before {
+/// content: url(../images/program/number.svg);
+//}
+.features-list__text {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 0.08em;
+
+  @media screen and (min-width: 768px) {
+    line-height: 1.71;
+
+    @media screen and (min-width: 1440px) {
+      font-size: 20px;
+      line-height: 1.2;
+    }
+  }
+}
