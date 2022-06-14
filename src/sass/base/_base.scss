@@ -4,6 +4,7 @@ body {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.4;
+  counter-reset: section;
 }
 .section {
   padding-top: 70px;
