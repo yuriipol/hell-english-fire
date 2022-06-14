@@ -3,12 +3,12 @@
   margin: 0 auto;
   padding: 0 26px;
   @media screen and (min-width: $mobile) {
-    width: $mobile;
+    width: 480px;
   }
   @media screen and (min-width: $tablet) {
-    width: $tablet;
+    width: 740px;
   }
   @media screen and (min-width: $desktop) {
-    width: $desktop;
+    width: 1368px;
   }
 }
