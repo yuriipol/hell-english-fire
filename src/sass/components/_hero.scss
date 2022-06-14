@@ -41,6 +41,9 @@
 }
 .hero-text__mod1 {
   color: #b9b9b9;
+  @media screen and (min-width: $desktop) {
+    display: block;
+  }
 }
 .hero-text__mod2 {
   color: #ff6b09;

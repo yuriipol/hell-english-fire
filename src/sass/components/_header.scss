@@ -60,6 +60,9 @@
 .logo-text {
   color: var(--accent-color);
 }
+.nav {
+  margin: 0 auto;
+}
 .navigation {
   margin-top: 108px;
   margin-bottom: 50px;
@@ -69,8 +72,6 @@
   }
   @media screen and (min-width: $tablet) and (max-width: 1439px) {
     margin-top: 159px;
-    margin-left: 218px;
-    margin-right: 218px;
   }
 }
 .navigation__item:not(:last-child) {
