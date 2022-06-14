@@ -5,11 +5,12 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(../images/registration/registration-bg.png);
+  background-image: url(../images/registration/registration-bg-mobile.png);
 
   @media screen and (min-width: $tablet) {
     padding-top: 60px;
     padding-bottom: 68px;
+    background-image: url(../images/registration/registration-bg-tablet.png);
   }
 }
 
@@ -59,6 +60,7 @@
     width: 545px;
     margin: 0 auto;
     margin-bottom: 40px;
+    padding-top: 5px;
   }
 }
 
@@ -70,7 +72,7 @@
   line-height: 1.21;
   letter-spacing: 0.08em;
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $mobile) {
     align-items: center;
   }
 }
@@ -91,7 +93,7 @@
   letter-spacing: 0.08em;
   color: var(--primary-light);
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $mobile) {
     width: 390px;
   }
 }
@@ -120,7 +122,7 @@
   letter-spacing: 0.08em;
   color: var(--primary-light);
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $mobile) {
     width: 390px;
     margin-bottom: 30px;
   }
