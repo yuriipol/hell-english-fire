@@ -1,0 +1,77 @@
+.solving
+{   display: block;
+    flex-wrap: wrap;
+    position: relative;
+     
+    background-color: var(--primary-color);
+    background-image: linear-gradient (to bottom (var(--primary-color), 78%), (var(--primary-light), 22%));
+    background-repeat: no-repeat;
+    margin-bottom: 130px;
+
+}
+.solving__title {
+    display: block;
+    height: 180px;
+    text-align: left;
+    flex-basis: calc(100% - 149px);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    padding-top: 100px;
+    margin-left: 11%;
+    margin-right: 41%;
+    margin-bottom: 68px;
+    color: var(--primary-light);
+   
+}
+
+.help {
+color: var(--accent-color);
+}
+
+.solving-board {
+    display: block;
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+    color: var(--primary-color);
+    //  margin-left: 11%;
+    //  margin-right: 11%;
+    // padding-bottom: 67px;
+    height: 362px;
+    align-items: center;
+    background-color: var(--primary-light);
+
+}
+
+.solving-board__list {
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+// line-height: 24px;
+// margin-left: 7%;
+// margin-right: 7%;
+margin: 7% auto;
+align-items: center;
+letter-spacing: 0.08em;
+
+color: var(--primary-color);
+background-color: var(--primary-light); 
+display: grid;
+grid: auto auto / auto auto auto;
+
+
+
+}
+
+.solving-board__title::before {
+    
+    counter-increment: section;
+    content: "-" counter(section)"";
+    display: flex;
+}
+
+
+
+
