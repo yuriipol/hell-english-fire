@@ -30,8 +30,8 @@
   }
 
   @media screen and (min-width: $desktop) {
+    padding-top: 100px;
     padding-bottom: 62px;
-    margin-bottom: 52px;
     background-image: url(../images/registration/registration-bg-desktop.png);
 
     @media (min-device-pixel-ratio: 2),
@@ -89,7 +89,7 @@
 .registration__note3 {
   font-weight: 600;
   font-size: 12px;
-  line-height: 15px;
+  line-height: 1.25;
   text-align: center;
   letter-spacing: 0.08em;
   color: var(--primary-light);
@@ -99,14 +99,22 @@
     font-size: 16px;
     width: 545px;
     margin: 0 auto;
-    margin-bottom: 40px;
-    padding-top: 5px;
   }
 
   @media screen and (min-width: $desktop) {
     width: 1090px;
     font-size: 30px;
     line-height: 1.23;
+  }
+}
+
+.registration__form {
+  @media screen and (min-width: $tablet) {
+    padding-top: 40px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 56px;
   }
 }
 
@@ -162,6 +170,11 @@
   letter-spacing: 0.08em;
   color: var(--primary-light);
 
+  @media screen and (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
   @media screen and (min-width: $desktop) {
     font-size: 20px;
     line-height: 1.21;
@@ -207,6 +220,11 @@
   line-height: 1.21;
   letter-spacing: 0.08em;
   color: var(--primary-light);
+
+  @media screen and (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 1.2;
+  }
 
   @media screen and (min-width: $desktop) {
     font-size: 20px;
