@@ -1,20 +1,17 @@
 .program {
-  // position: relative;
   height: 2050px;
   min-width: 320px;
   max-width: 1680px;
   display: block;
   align-items: center;
   margin: auto;
-  // padding-left: 20px;
-  // padding-right: 20px;
+
   padding-top: 50px;
   background-color: var(--primary-color);
 
   @media screen and (min-width: 768px) {
     height: 1334px;
-    padding-left: 40px;
-    // padding-right: 40px;
+
     padding-top: 60px;
   }
   @media screen and (min-width: 1440px) {
@@ -22,20 +19,6 @@
     width: 1680px;
     background-color: var(--primary-color);
     padding-top: 120px;
-  }
-}
-.conteiner-program {
-  @media screen and (min-width: 768px) {
-    margin: 0;
-    padding: 0;
-  }
-  @media screen and (min-width: 1440px) {
-    display: block;
-    width: 1440px;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0;
   }
 }
 
