@@ -12,6 +12,9 @@ body {
   @media screen and (min-width: $desktop) {
     background-size: auto 878px;
   }
+  &.no-scroll {
+    overflow: hidden;
+  }
 }
 
 // .page {
