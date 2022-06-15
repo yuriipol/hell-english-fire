@@ -69,13 +69,21 @@
 
 .program-list::after {
   content: '';
-  background-image: url(/src/images/program/students-mob.png);
+
   width: 120px;
   height: 137px;
   display: block;
   position: absolute;
   top: 97%;
   left: 72%;
+  background-image: url(/src/images/program/students-mob.png);
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/src/images/program/students-mob@2x.png);
+  }
 
   @media screen and (min-width: 768px) {
     content: '';
@@ -84,6 +92,13 @@
     height: 273px;
     top: 73%;
     left: 48%;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(/src/images/program/students-tab@2x.png);
+    }
   }
 
   @media screen and (min-width: 1440px) {
@@ -91,8 +106,15 @@
     background-image: url(/src/images/program/students-desk.png);
     width: 672px;
     height: 502px;
-    top: 65%;
-    left: -10%;
+    top: 60%;
+    left: -15%;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(/src/images/program/students-desk@2x.png);
+    }
   }
 }
 
