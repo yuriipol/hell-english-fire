@@ -12,7 +12,7 @@
     padding-top: 35px;
   }
   @media screen and(min-width:1440px) {
-    margin-top: -195px;
+    margin-top: -250px;
   }
 }
 
@@ -36,6 +36,9 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.08em;
+  }
+  @media screen and(min-width:1440px) {
+    visibility: hidden;
   }
 }
 .features-box {
@@ -92,9 +95,18 @@
   margin-bottom: 30px;
 }
 
-//.features-list__item::before {
-/// content: url(../images/program/number.svg);
-//}
+.features-list__item::before {
+  content: ' — 0';
+  color: var(--accent-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.65;
+  letter-spacing: 0.08em;
+
+  @media screen and (min-width: 1440px) {
+    font-size: 20px;
+  }
+}
 .features-list__text {
   color: var(--primary-color);
   font-weight: 700;
