@@ -34,11 +34,17 @@
   position: absolute;
   top: 93%;
   left: 0;
+  @media screen and (min-width: 480px) {
+    left: 10%;
+  }
 }
 .slider__btn--next {
   position: absolute;
   top: 93%;
-  left: 81%;
+  left: 85%;
+  @media screen and (min-width: 480px) {
+    left: 78%;
+  }
 }
 .slider__item {
   margin-bottom: 52px;
