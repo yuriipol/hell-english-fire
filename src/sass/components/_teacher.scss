@@ -32,7 +32,6 @@
     
   }
 
-
 }
 .teacher__title {
   position: relative;
@@ -40,14 +39,15 @@
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.08em;
-  padding-bottom: 30px;
-
   color: var(--primary-color);
+
+  padding-bottom: 10px;
+  border-bottom: 1px solid #B9B9B9;
 
   @media screen and (min-width: 1440px) {
     font-size: 30px;
     line-height: 1.23;
-    padding-bottom: 45px;
+    padding-bottom: 15px;
   }
   @media screen and (max-width: 767.98px) {
     margin-top: 20px;
@@ -55,30 +55,8 @@
 
 }
 
-.teacher__title::after{
-  content: " ";
-    border: 1px solid #B9B9B9;
-    width: 100%;
-    left: 0;
-    position: absolute;
-    bottom: 20px;
-
-    @media screen and (max-width:1439.98px){
-      bottom: 20px;
-    }
-    @media screen and (min-width: 1440px) {
-    bottom: 30px
-    }
-}
-
 .teacher__list{
-  @media screen and (max-width: 767.98px) {
-    width: 100%;
-    height: 179px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
+  margin-top: 20px;
   @media screen and (max-width: 767.98px) {
     margin-bottom: 22px;
   }
@@ -86,6 +64,7 @@
     margin-bottom: 32px;
   }
   @media screen and (min-width: 1440px) {
+    margin-top: 30px;
     margin-bottom: 45px;
   }
 }
@@ -125,21 +104,11 @@
 }
 
 .teacher__item{
-  @media screen and (max-width: 767.98px) {
-
   display: flex;
-  }
-  @media screen and (min-width: 768px) {
-    display: flex;
-  }
 }
 
-
-
 .teacher__item:not(:last-child){
-  @media screen and (min-width: 768px) {
-    margin-bottom: 20px;
-  }
+  margin-bottom: 20px;
   @media screen and (min-width: 1440px) {
     margin-bottom: 30px;
   }
