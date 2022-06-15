@@ -47,6 +47,7 @@
   }
 }
 .features-box {
+  position: relative;
   display: block;
   width: 280px;
   height: 638px;
@@ -74,6 +75,7 @@
 .features-list {
   display: block;
   list-style-type: none;
+  counter-reset: section;
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -103,7 +105,8 @@
 }
 
 .features-list__item::before {
-  content: ' — 0';
+  content: ' — 0' counter(section) '';
+  counter-increment: section;
   color: var(--accent-color);
   font-weight: 700;
   font-size: 14px;
