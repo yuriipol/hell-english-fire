@@ -1,8 +1,9 @@
 .reviews {
-  padding-top: 35px;
-  padding-bottom: 61px;
+  padding-bottom: 70px;
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 130px;
+  }
 }
-
 .reviews__title {
   margin-bottom: 25px;
 
@@ -13,7 +14,7 @@
   letter-spacing: 0.03em;
 
   @media screen and (min-width: $tablet) {
-    margin-bottom: 30px;
+    margin-bottom: 70px;
     font-size: 26px;
   }
 
@@ -37,6 +38,14 @@
   @media screen and (min-width: 480px) {
     left: 10%;
   }
+  @media screen and (min-width: $tablet) {
+    top: 30%;
+    left: -20px;
+  }
+  @media screen and (min-width: $desktop) {
+    top: 30%;
+    left: 0;
+  }
 }
 .slider__btn--next {
   position: absolute;
@@ -45,13 +54,26 @@
   @media screen and (min-width: 480px) {
     left: 78%;
   }
+  @media screen and (min-width: $tablet) {
+    top: 30%;
+    left: 95%;
+  }
 }
 .slider__item {
   margin-bottom: 52px;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 100px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 91px;
+  }
 }
 
 .feedback__container {
-  display: flex;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .feedback__left-side {
@@ -70,6 +92,9 @@
   @media screen and (max-width: 767px) {
     text-align: center;
   }
+  @media screen and (min-width: $tablet) {
+    margin-left: 46px;
+  }
 }
 .feedback__meta-title {
   font-weight: 800;
@@ -84,6 +109,7 @@
   }
   @media screen and (min-width: $tablet) {
     font-size: 20px;
+    margin-bottom: 20px;
   }
   @media screen and (min-width: $desktop) {
     font-size: 30px;
@@ -98,11 +124,26 @@
   @media screen and (max-width: 767px) {
     margin-bottom: 20px;
   }
+  @media screen and (min-width: $tablet) {
+    max-width: 412px;
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: 482px;
+    font-size: 14px;
+  }
 }
 .feedback__meta-description {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.56;
+  @media screen and (min-width: $tablet) {
+    max-width: 412px;
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: 706px;
+    font-size: 18px;
+  }
 }
 .read-more {
   font-size: 12px;
@@ -110,6 +151,9 @@
 
   text-decoration-line: underline;
   color: #ff6b09;
+  @media screen and (min-width: $desktop) {
+    font-size: 18px;
+  }
 }
 
 .slider__pagination {
