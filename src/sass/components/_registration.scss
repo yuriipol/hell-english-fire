@@ -1,15 +1,45 @@
 .registration {
-  padding: 55px 20px;
-  height: auto;
+  max-width: 1680px;
+  margin: 0 auto;
+  padding: 55px 0;
+
   background-color: var(--primary-color);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(../images/registration/registration-bg.png);
+  background-image: url(../images/registration/registration-bg-mobile.png);
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/registration/registration-bg-mobile@2x.png);
+  }
 
   @media screen and (min-width: $tablet) {
     padding-top: 60px;
     padding-bottom: 68px;
+    background-image: url(../images/registration/registration-bg-tablet.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/registration/registration-bg-tablet@2x.png);
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 62px;
+    margin-bottom: 52px;
+    background-image: url(../images/registration/registration-bg-desktop.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/registration/registration-bg-desktop@2x.png);
+    }
   }
 }
 
@@ -28,6 +58,11 @@
     margin: 0 auto;
     margin-bottom: 50px;
   }
+
+  @media screen and (min-width: $desktop) {
+    width: 980px;
+    font-size: 46px;
+  }
 }
 
 .registration__note2 {
@@ -42,6 +77,12 @@
     font-size: 16px;
     width: 545px;
     margin: 0 auto;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 1090px;
+    font-size: 30px;
+    line-height: 1.23;
   }
 }
 
@@ -59,6 +100,13 @@
     width: 545px;
     margin: 0 auto;
     margin-bottom: 40px;
+    padding-top: 5px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 1090px;
+    font-size: 30px;
+    line-height: 1.23;
   }
 }
 
@@ -70,7 +118,7 @@
   line-height: 1.21;
   letter-spacing: 0.08em;
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $mobile) {
     align-items: center;
   }
 }
@@ -91,8 +139,19 @@
   letter-spacing: 0.08em;
   color: var(--primary-light);
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $mobile) {
     width: 390px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 478px;
+    height: 70px;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    padding-left: 40px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 1.21;
   }
 }
 
@@ -102,6 +161,11 @@
   line-height: 1.21;
   letter-spacing: 0.08em;
   color: var(--primary-light);
+
+  @media screen and (min-width: $desktop) {
+    font-size: 20px;
+    line-height: 1.21;
+  }
 }
 
 .registration__form-tel {
@@ -120,9 +184,20 @@
   letter-spacing: 0.08em;
   color: var(--primary-light);
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $mobile) {
     width: 390px;
     margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 478px;
+    height: 70px;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    padding-left: 40px;
+    margin-bottom: 80px;
+    font-size: 20px;
+    line-height: 1.21;
   }
 }
 
@@ -132,6 +207,11 @@
   line-height: 1.21;
   letter-spacing: 0.08em;
   color: var(--primary-light);
+
+  @media screen and (min-width: $desktop) {
+    font-size: 20px;
+    line-height: 1.21;
+  }
 }
 
 .registration__btn {
@@ -151,6 +231,17 @@
   margin: 0 auto;
   cursor: pointer;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: $mobile) {
+    width: 260px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 354px;
+    height: 70px;
+    font-size: 14px;
+    line-height: 1.21;
+  }
 }
 
 .registration__btn:hover,
