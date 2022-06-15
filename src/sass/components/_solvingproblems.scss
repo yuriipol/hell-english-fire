@@ -1,42 +1,11 @@
-<<<<<<< Updated upstream
-=======
 .solving {
     
-
   background-color: var(--primary-color);
-  background-image: linear-gradient(
-  to bottom, #111518 78%,#ffffff 78%),
-  url(/src/images/solvingproblem/campfire.svg)
-  
-  
-//   position: absolute;
-//   left: 0.3%;
-//   right: -11.5%;
-//   top: 0.01%;
-//   bottom: -31.55%;
 
-
-     
-//    background-position: 78% 22%;
-//    background-repeat none;
-//    margin-bottom: 130px;
-}
-// .svg {
-     
-//     display: inline-block;
-//     left: 1.96%;
-//     right: -11.5%;
-//     top: 0.01%;npm
-//     bottom: -31.55%;
-    
-
-//     width: 407px;
-//     height: 472px;
-//     // left: 1273px;
-//     // top: 1298px;
-//     margin-right: 0;
-//     margin-bottom: 0;
-//   }
+  background-image: url(../images/solvingproblems/campfire.svg), linear-gradient(
+  to bottom, #111518 80%, #ffffff 80%);
+  background-repeat: no-repeat;
+  background-position: 100% 20%;}
 
   
 
@@ -117,4 +86,3 @@
     margin-left: 0px;    
 }
 }
->>>>>>> Stashed changes
