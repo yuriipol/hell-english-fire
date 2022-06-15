@@ -13,6 +13,11 @@
   }
   @media screen and(min-width:1440px) {
     margin-top: -250px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    align-items: center;
   }
 }
 
@@ -58,6 +63,8 @@
     padding: 40px 98px;
   }
   @media screen and(min-width:1440px) {
+    margin-right: auto;
+    margin-left: auto;
     width: 1314px;
     height: 390px;
     padding: 67px 113px;
