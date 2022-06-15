@@ -1,0 +1,120 @@
+<<<<<<< Updated upstream
+=======
+.solving {
+    
+
+  background-color: var(--primary-color);
+  background-image: linear-gradient(
+  to bottom, #111518 78%,#ffffff 78%),
+  url(/src/images/solvingproblem/campfire.svg)
+  
+  
+//   position: absolute;
+//   left: 0.3%;
+//   right: -11.5%;
+//   top: 0.01%;
+//   bottom: -31.55%;
+
+
+     
+//    background-position: 78% 22%;
+//    background-repeat none;
+//    margin-bottom: 130px;
+}
+// .svg {
+     
+//     display: inline-block;
+//     left: 1.96%;
+//     right: -11.5%;
+//     top: 0.01%;npm
+//     bottom: -31.55%;
+    
+
+//     width: 407px;
+//     height: 472px;
+//     // left: 1273px;
+//     // top: 1298px;
+//     margin-right: 0;
+//     margin-bottom: 0;
+//   }
+
+  
+
+
+.solving__title {
+  display: block;
+  height: 180px;
+  text-align: left;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  padding-top: 100px;
+  margin-left: 11%;
+  margin-right: 41%;
+  margin-bottom: 68px;
+  color: var(--primary-light);
+  
+}
+
+
+.help {
+  color: var(--accent-color);
+}
+
+.solving-board {
+  display: block;
+  position: relative;
+  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+  color: var(--primary-color);
+  margin-left: 11%;
+  margin-right: 11%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+  align-items: center;
+  background-color: var(--primary-light);
+}
+
+.solving-board__list {
+  position: relative;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  align-items: start;
+  letter-spacing: 0.08em;
+  color: var(--primary-color);
+  background-color: var(--primary-light);
+  display: grid;
+  grid: auto auto / auto auto auto;
+  
+
+}
+
+.solving-board__title::before {
+  counter-increment: section;
+  content: '— ' counter(section) '';
+  display: flex;
+  color: var(--accent-color);
+
+  align-items: top;
+  letter-spacing: 0.08em;
+}
+
+
+.solving-board__item {
+    display: inline-block;
+    padding-top: 2%; 
+    padding-bottom: 2%;
+     
+    text-align: left;
+
+    margin-left: 40px;
+&:not-first-child {
+    margin-left: 0px;    
+}
+}
+>>>>>>> Stashed changes
