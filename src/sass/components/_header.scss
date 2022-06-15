@@ -156,13 +156,11 @@
 .navigation__button-menu {
   position: relative;
 
-  // z-index: 200;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
+  z-index: 20;
+
   border: none;
   background-color: transparent;
-  // cursor: pointer;
+
   @media screen and (max-width: $tablet) {
     margin-left: auto;
   }
@@ -192,9 +190,9 @@
   &.is-open {
     display: flex;
     flex-direction: column;
-    // justify-content: space-between;
 
     position: fixed;
+    z-index: 10;
     top: 0;
     left: 0;
     width: 100%;
@@ -207,11 +205,3 @@
     margin-left: 144px;
   }
 }
-
-//   }
-//   @media screen and (min-width: $tablet) {
-//     display: flex;
-//     align-items: center;
-//     width: 100%;
-//   }
-// }
