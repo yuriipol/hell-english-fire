@@ -1,4 +1,5 @@
 import Inputmask from 'inputmask';
+import JustValidate from 'just-validate';
 //input mask
 const form = document.querySelector('.registration__form');
 const telselector = form.querySelector('input[type="tel"]');
@@ -6,7 +7,8 @@ const telselector = form.querySelector('input[type="tel"]');
 const inputmask = new Inputmask('+38 099 999 99 99');
 inputmask.mask(telselector);
 
-new window.JustValidate('.registration__form', {
+// validation
+new JustValidate('.registration__form', {
   rules: {
     tel: {
       required: true,
