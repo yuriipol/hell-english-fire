@@ -10,13 +10,12 @@
 
   @media screen and (min-width: 768px) {
     padding-top: 60px;
-    padding-bottom: 137px;
+    padding-bottom: 70px;
   }
   @media screen and (min-width: 1440px) {
-    width: 1680px;
+    max-width: 1680px;
     background-color: var(--primary-color);
     padding-top: 120px;
-    padding-bottom: 120px;
   }
 }
 
@@ -88,8 +87,8 @@
     background-image: url(/src/images/program/students-tab.png);
     width: 374px;
     height: 273px;
-    top: 73%;
-    left: 48%;
+    top: 75%;
+    left: 50%;
 
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
@@ -104,8 +103,8 @@
     background-image: url(/src/images/program/students-desk.png);
     width: 672px;
     height: 502px;
-    top: 60%;
-    left: -15%;
+    top: 70%;
+    left: -13%;
 
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
@@ -177,8 +176,9 @@
 
   @media screen and (min-width: 1440px) {
     top: 5px;
-    width: calc(100% + 46px);
+    width: calc(100% + 630px);
     height: 3px;
+    transform: translateX(-180px);
   }
 }
 .program-list__item::after {
