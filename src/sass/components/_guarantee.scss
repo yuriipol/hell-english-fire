@@ -1,0 +1,115 @@
+.guarantee {
+  padding-top: 0px;
+}
+
+.guaratee__title {
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-color);
+
+  @media screen and (max-width: 1439.98px) {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 46px;
+    margin-bottom: 50px;
+  }
+}
+
+.guarantee__list {
+  background-color: #f1f1f1;
+  position: relative;
+
+  @media screen and (max-width: 767.98px) {
+    margin-left: -26px;
+    margin-right: -26px;
+
+    padding-top: 45px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 45px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 30px;
+    padding-right: 64px;
+    padding-bottom: 30px;
+    padding-left: 65px;
+  }
+  @media screen and (min-width: 1440px) {
+    padding-top: 50px;
+    padding-bottom: 45px;
+    padding-left: 112px;
+    padding-right: 112px;
+  }
+}
+.guarantee__item {
+  position: relative;
+  @media screen and (max-width: 767.98px) {
+    padding-left: 35px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-left: 39px;
+  }
+  @media screen and (min-width: 1440px) {
+    padding-left: 52px;
+  }
+}
+
+.guarantee__item:not(:last-child) {
+  margin-bottom: 25px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 20px;
+  }
+}
+
+.guarantee__item::before {
+  content: ' ';
+  background-image: url(/src/images/teacher/svg/campfire.svg);
+  width: 15px;
+  height: 20px;
+  background-size: contain;
+  display: block;
+  flex-shrink: 0;
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  @media screen and (min-width: 1440px) {
+    width: 22px;
+    height: 30px;
+  }
+}
+.guarantee__item:not(:last-child):after {
+  content: ' ';
+  position: absolute;
+  border: 1px dashed #b9b9b9;
+  top: 25px;
+  left: 11px;
+  height: 100%;
+  display: block;
+
+  @media screen and (max-width: 1439.98px) {
+    left: 7px;
+  }
+}
+
+.guarantee__txt {
+  font-weight: 500;
+  color: var(--secondary-color);
+  font-size: 12px;
+  line-height: 1.67;
+
+  @media screen and (min-width: 1440px) {
+    font-size: 20px;
+    line-height: 1.4;
+    width: 1038px;
+  }
+}
+.guarantee__txt--color {
+  color: var(--accent-color);
+}
