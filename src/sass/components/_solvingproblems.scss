@@ -1,13 +1,3 @@
-.solving {
-   
-  
-  background-color: var(--primary-color);
-  background-image: linear-gradient(
-  to bottom, #111518 80%,#ffffff 80%),
-  url(/src/images/solvingproblem/campfire.svg);
-
-}
-
 .solving { 
   
   height: auto;
@@ -16,7 +6,7 @@
   background-color: var(--primary-color);
 
   @media screen and (min-width: $desktop) {
-  background-image: url(../images/solvingproblem/campfire.svg),linear-gradient(
+  background-image: url(../images/solvingproblems/campfire.svg),linear-gradient(
   to bottom, #111518 80%,#ffffff 80%); 
   background-repeat: no-repeat;
   background-position: 100% 20%;}
@@ -24,13 +14,16 @@
   @media screen and (min-width: $tablet) {
     background-color: var(--primary-color);
     background-image: linear-gradient(
-    to bottom, #111518 78%,#ffffff 78%),
-    url(/src/images/solvingproblem/campfire.svg); 
+    to bottom, #111518 80%,#ffffff 80%),
+  }
+  @media screen and (min-width: $mobile) {
+    background-color: var(--primary-color);
+    background-image: linear-gradient(
+    to bottom, #111518 80%,#ffffff 80%),
   }
 
+
 }
-
-
 .solving__title {
   display: block;
   height: 180px;
