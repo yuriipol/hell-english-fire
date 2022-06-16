@@ -91,7 +91,11 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
+    box-shadow: 0 0 10px var(--accent-color);
   }
+  transition-property: color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   @media screen and (min-width: $desktop) {
     font-weight: 700;
     font-size: 14px;
@@ -123,6 +127,15 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--accent-color);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 10px var(--accent-color);
+  }
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
   @media screen and (min-width: $tablet) {
     display: none;
   }
@@ -141,6 +154,14 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--accent-color);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 10px var(--accent-color);
+  }
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (max-width: 767px) {
     display: none;

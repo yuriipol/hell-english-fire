@@ -71,6 +71,23 @@
   background-color: var(--accent-color);
   color: #ffffff;
 
+  @keyframes glowing {
+    0% {
+      background-color: var(--accent-color);
+      box-shadow: 0 0 3px var(--accent-color);
+    }
+    50% {
+      background-color: #e84919;
+      box-shadow: 0 0 10px red;
+    }
+    100% {
+      background-color: var(--accent-color);
+      box-shadow: 0 0 3px var(--accent-color);
+    }
+  }
+  & {
+    animation: glowing 1300ms infinite;
+  }
   @media screen and (max-width: $tablet) {
     margin: 0 auto;
     margin-bottom: 54px;
