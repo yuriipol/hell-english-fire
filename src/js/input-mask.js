@@ -1,5 +1,7 @@
 import Inputmask from 'inputmask';
 import JustValidate from 'just-validate';
+import './just-validate.min.js';
+
 //input mask
 const form = document.querySelector('.registration__form');
 const telselector = form.querySelector('input[type="tel"]');
@@ -8,7 +10,7 @@ const inputmask = new Inputmask('+38 099 999 99 99');
 inputmask.mask(telselector);
 
 // validation
-new JustValidate('.registration__form', {
+new window.JustValidate('.registration__form', {
   rules: {
     tel: {
       required: true,
@@ -21,14 +23,16 @@ new JustValidate('.registration__form', {
   colorWrong: 'red',
   messages: {
     name: {
-      required: 'Введите имя',
-      minLength: 'Введите 3 и более символов',
-      maxLength: 'Запрещено вводить более 15 символов',
+      required: 'Enter your name',
+      minLength: 'Please enter 3 or more characters',
+      maxLength: 'It is forbidden to enter more than 15 characters',
     },
     tel: {
-      required: 'Введите номер телефона',
-      function: 'Здесь должно быть 9 символов без +38 0',
+      required: 'Enter phone number',
+      function: 'It should be 9 characters without +38 0',
     },
   },
-  submitHandler: function (thisForm) {},
+  submitHandler: function (thisForm) {
+    console.log('Thanks!');
+  },
 });
